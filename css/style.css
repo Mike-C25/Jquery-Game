@@ -40,14 +40,14 @@ body {
   padding: 30px 0px;
   height: 75px; }
   .intro .hype {
-    font-size: 40px; }
+    font-size: 48px; }
   .intro .winner {
-    font-size: 40px;
+    font-size: 48px;
     color: #f35626;
     background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: hue 3s infinite linear; }
+    animation: hue 2s infinite linear; }
 
 @-webkit-keyframes hue {
   from {
