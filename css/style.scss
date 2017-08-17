@@ -1,0 +1,47 @@
+#goal{
+	width: 150px;
+	height: 150px;
+	background: #f2f2f2;
+	color: black;
+}
+
+#stats{
+	width: 200px;
+	height: 100px;
+	color: black;
+}
+
+
+#gems {
+    #green {
+    	display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: green;
+    }
+    #red {
+    	display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: red;
+    }
+    #blue {
+    	display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: blue;
+    }
+    #yellow {
+    	display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: yellow;
+    }
+}	
+
+#total-score{
+	height: 150px;
+	width: 250px;
+	background: #f2f2f2;
+	color: black;
+}
