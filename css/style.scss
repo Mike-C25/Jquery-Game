@@ -1,47 +1,229 @@
-#goal{
-	width: 150px;
-	height: 150px;
-	background: #f2f2f2;
-	color: black;
+@import url('https://fonts.googleapis.com/css?family=Dhurjati');
+@import url('https://fonts.googleapis.com/css?family=Jura');
+
+body {
+    position: relative;
+    background-image: url("../images/nyancatbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Dhurjati', sans-serif;
 }
 
-#stats{
-	width: 200px;
-	height: 100px;
-	color: black;
+.header {
+    text-align: center;
+    color: white;
+    h1 {
+        font-size: 100px;
+    }
+}
+
+.audio-controller {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+    .audio-button {
+        display: block;
+        background: url('../images/soundOnWhite.png');
+        height: 30px;
+        width: 30px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        &.muted {
+            background: url('../images/soundOffWhite.png');
+        }
+    }
+}
+
+.intro {
+    text-align: center;
+    margin: 0px auto;
+    font-size: 24px;
+    color: white;
+    padding: 30px 0px;
+    height: 75px;
+    .hype {
+        font-size: 40px;
+    }
+    .winner{
+        font-size: 40px;
+    	color: #f35626;
+        background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: hue 3s infinite linear;
+    }
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+
+
+.instructions {
+	z-index:-1;
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    position: absolute;
+    bottom: 150px;
+    left: 20px;
+    margin: 0px auto;
+    width: 300px;
+    height: 100px;
+    font-size: 24px;
+    color: white;
+    padding: 0px;
+}
+
+
+#cat {
+    // background-image:url("../images/cattimestwo.gif");
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    .slow {
+        background-image: url("../images/catnyan_3.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 100%;
+        transition: all .7s ease-in-out;
+        background-position: -1000px;
+        display: block;
+    }
+    .fast {
+        background-image: url("../images/catnyan_1.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 100%;
+        transition: all .7s ease-in-out;
+        background-position: -1000px;
+        display: none;
+    }
+    .normal {
+        background-image: url("../images/catnyan_2.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 100%;
+        transition: all .7s ease-in-out;
+        background-position: -1000px;
+        display: none;
+    }
+}
+
+#goal {
+    margin: 0px auto;
+    width: 150px;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background: rgba(0, 0, 0, .3);
+    font-family: 'Jura', sans-serif;
+}
+
+#stats {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background: rgba(0, 0, 0, .3);
+    font-family: 'Jura', sans-serif;
 }
 
 
 #gems {
+    text-align: center;
     #green {
-    	display: inline-block;
+        display: inline-block;
         width: 100px;
         height: 100px;
-        background: green;
+        padding: 0px 20px;
+        background: url("../images/gem_green.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     #red {
-    	display: inline-block;
+        display: inline-block;
         width: 100px;
         height: 100px;
-        background: red;
+        padding: 0px 20px;
+
+        background: url("../images/gem_rose.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     #blue {
-    	display: inline-block;
+        display: inline-block;
         width: 100px;
         height: 100px;
-        background: blue;
+        padding: 0px 20px;
+
+        background: url("../images/gem_blue.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     #yellow {
-    	display: inline-block;
+        display: inline-block;
         width: 100px;
         height: 100px;
-        background: yellow;
-    }
-}	
+        padding: 0px 20px;
 
-#total-score{
-	height: 150px;
-	width: 250px;
-	background: #f2f2f2;
-	color: black;
+        background: url("../images/gem_orange_big.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+
+#score-header {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    h3 {
+        font-size: 40px;
+    }
+}
+
+#total-score {
+    text-align: center;
+    margin: 0px auto;
+    height: 150px;
+    width: 250px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background: rgba(0, 0, 0, .3);
+    font-family: 'Jura', sans-serif;
 }

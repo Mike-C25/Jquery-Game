@@ -4,29 +4,50 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Jquery Game</title>
+    <title>Cat Generator</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/shake.css">
     <link rel="stylesheet" href="css/style.css">
-    
 </head>
 
 <body>
-    <header id="header" class="">
+    <header id="header" class="header">
+        <h1> Cat Power Generator! <h1>
     </header>
     <!-- /header -->
-    <div class="instructions">
-        Collect Dem Gems!
+    <div id="audio-controller" class="audio-controller">
+    	<span class="audio-button"></span>
+    </div>
+    <div class="intro">
+
+		<p>
+		This cat is looking a bit slow...Let's get it <span class="hype shake shake-constant shake-little">HYPED</span> with some <span class="winner">WINS</span></p>
+		
+
     </div>
     <div id="goal" class="goal">
     </div>
-    <div id="stats" class="stats">
+     <div id="cat" class="cat">
+    	<span class="slow"></span>
+        <span class="fast"></span>
+        <span class="normal"></span>
     </div>
+  
     <div id="gems" class="gems">
     </div>
     <div id="score-header" class="score-header">
-    	Gem Power Collected:
+    <h3>Gem Power Collected:</h3>
     </div>
     <div id="total-score" class="total-score">
     </div>
+      <div id="stats" class="stats">
+    </div>
+    <div class="instructions">
+    	<h2>Instructions:</h2>
+		<p>Each gem contains a specific random value, combine multiple values to match the power the cat requires!</p>
+    </div>
+    
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
